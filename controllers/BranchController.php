@@ -29,7 +29,7 @@ class BranchController{
             ];
 
             $this->branchModel->insert($data);
-            header('Location: index.php?controller=branch&action=index');
+            header('Location: index.php?action=branches');
             exit;
         }
     }
@@ -56,7 +56,7 @@ class BranchController{
             ];
 
             $this->branchModel->updateBranch($id, $data);
-            header('Location: index.php?controller=branch&action=index');
+            header('Location: index.php?action=branches');
             exit;
         }
     }
@@ -66,7 +66,7 @@ class BranchController{
         if($id){
             $this->branchModel->deleteBranch($id);
         }
-        header('Location: index.php?controller=branch&action=index');
+        header('Location: index.php?action=branches');
         exit;
     }
 }
