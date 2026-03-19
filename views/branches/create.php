@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Thêm chi nhánh</h1>
-    <form action="index.php?controller=branch&action=store" method="post">
+    <form action="index.php?action=branch-store" method="post">
         <div>
             <label>>Mã chi nhánh</label>
             <input type="text" name="branch_code" require>
@@ -30,7 +30,7 @@
         <br>
 
         <button type="submit">Lưu</button>
-        <a href="index.php?controller=branch&action=index">Quay lại</a>
+        <a href="index.php?action=branches">Quay lại</a>
     </form>
 </body>
 </html>
