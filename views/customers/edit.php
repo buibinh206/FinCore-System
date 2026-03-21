@@ -7,7 +7,7 @@
 <body>
     <h1>Sửa khách hàng</h1>
 
-    <form action="index.php?action=customer-update" method="POST">
+    <form action="<?= url('customer-update') ?>" method="POST">
         <input type="hidden" name="id" value="<?= $customer['id'] ?>">
 
         <div>
@@ -88,7 +88,7 @@
         <br>
 
         <button type="submit">Cập nhật</button>
-        <a href="index.php?action=customers">Quay lại</a>
+        <a href="<?= url('customers') ?>">Quay lại</a>
     </form>
 </body>
 </html>

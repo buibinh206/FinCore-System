@@ -7,7 +7,7 @@
 <body>
     <h1>Danh sách khách hàng</h1>
 
-    <a href="index.php?action=customer-create">+ Thêm khách hàng</a>
+    <a href="<?= url('customer-create') ?>">+ Thêm khách hàng</a>
 
     <table border="1" cellpadding="10" cellspacing="0" width="100%">
         <thead>
@@ -40,9 +40,9 @@
                         <td><?= htmlspecialchars($customer['email']) ?></td>
                         <td><?= htmlspecialchars($customer['kyc_status']) ?></td>
                         <td>
-                            <a href="index.php?action=customer-edit&id=<?= $customer['id'] ?>">Sửa</a>
+                            <a href="<?= url('customer-edit', [$customer['id']]) ?>">Sửa</a>
                             |
-                            <a href="index.php?action=customer-delete&id=<?= $customer['id'] ?>"
+                            <a href="<?= url('customer-delete', [$customer['id']]) ?>"
                                onclick="return confirm('Bạn có chắc muốn xóa không?')">
                                 Xóa
                             </a>

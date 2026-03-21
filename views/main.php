@@ -27,6 +27,9 @@
             <li class="nav-item">
                 <a class="nav-link text-uppercase" href="<?= url('employees') ?>"><b>Nhân viên</b></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="<?= url('customers') ?>"><b>Khách hàng</b></a>
+            </li>
         </ul>
     </nav>
 

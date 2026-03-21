@@ -41,7 +41,7 @@ class CustomerController
 
             $this->customerModel->insert($data);
 
-            header('Location: index.php?action=customers');
+            header('Location: ' . url('customers'));
             exit;
         }
     }
@@ -89,7 +89,7 @@ class CustomerController
 
             $this->customerModel->updateCustomer($id, $data);
 
-            header('Location: index.php?action=customers');
+            header('Location: ' . url('customers'));
             exit;
         }
     }
@@ -102,7 +102,7 @@ class CustomerController
             $this->customerModel->deleteCustomer($id);
         }
 
-        header('Location: index.php?action=customers');
+        header('Location: ' . url('customers'));
         exit;
     }
 }

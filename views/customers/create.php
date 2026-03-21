@@ -7,7 +7,7 @@
 <body>
     <h1>Thêm khách hàng</h1>
 
-    <form action="index.php?action=customer-store" method="POST">
+    <form action="<?= url('customer-store') ?>" method="POST">
         <div>
             <label>User customer</label><br>
             <select name="user_id" required>
@@ -85,7 +85,7 @@
         <br>
 
         <button type="submit">Lưu</button>
-        <a href="index.php?action=customers">Quay lại</a>
+        <a href="<?= url('customers') ?>">Quay lại</a>
     </form>
 </body>
 </html>
