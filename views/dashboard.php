@@ -170,6 +170,10 @@
                         <i class="bi bi-people"></i>
                         <span>Quản lý Nhân viên</span>
                     </a>
+                    <a class="nav-link mb-2" href="<?= url('customers') ?>" data-section="customers">
+                        <i class="bi bi-people-fill"></i>
+                        <span>Quản lý Khách hàng</span>
+                    </a>
                     <hr class="my-3">
                     <a class="nav-link mb-2" href="#" data-section="reports">
                         <i class="bi bi-graph-up"></i>
