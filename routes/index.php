@@ -19,5 +19,13 @@ match ($action) {
     'employee-update' => (new EmployeeController)->update(),
     'employee-delete' => (new EmployeeController)->delete(),
 
+    //customers
+    'customers' => (new CustomerController)->index(),
+    'customer-create' => (new CustomerController)->create(),
+    'customer-store' => (new CustomerController)->store(),
+    'customer-edit' => (new CustomerController)->edit(),
+    'customer-update' => (new CustomerController)->update(),
+    'customer-delete' => (new CustomerController)->delete(),
+
     default => die('Route không tồn tại'),
 };
