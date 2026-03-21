@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /FinCore%20System/
+    
+    # Nếu request là file hoặc thư mục thực tế, không rewrite
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Rewrite route với ID (ví dụ: /branch-edit/1)
+    RewriteRule ^([a-zA-Z0-9_-]+)/([0-9]+)/?$ index.php?action=$1&id=$2 [QSA,L]
+    
+    # Rewrite route đơn giản (ví dụ: /branches)
+    RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?action=$1 [QSA,L]
+    
+    # Rewrite root
+    RewriteRule ^$ index.php?action=/ [QSA,L]
+</IfModule>

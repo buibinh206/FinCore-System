@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Sửa chi nhánh</h1>
-    <form action="index.php?action=branch-update" method="post">
+    <form action="<?= url('branch-update') ?>" method="post">
         <input type="hidden" name="id" value="<?= $branch['id'] ?>">
         <div>
             <label>>Mã chi nhánh</label>
@@ -31,7 +31,7 @@
         <br>
 
         <button type="submit">Cập nhật</button>
-        <a href="index.php?action=branches">Quay lại</a>
+        <a href="<?= url('branches') ?>">Quay lại</a>
     </form>
 </body>
 </html>
