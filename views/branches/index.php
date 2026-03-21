@@ -76,9 +76,14 @@
                 <i class="bi bi-building me-2"></i>Danh sách chi nhánh
             </div>
 
-            <a href="<?= url('branch-create') ?>" class="btn btn-success btn-custom">
-                <i class="bi bi-plus-circle me-2"></i>Thêm chi nhánh
-            </a>
+            <div>
+                <a href="<?= url('') ?>" class="btn btn-secondary btn-custom me-2">
+                    <i class="bi bi-house-door me-2"></i>Quay lại Dashboard
+                </a>
+                <a href="<?= url('branch-create') ?>" class="btn btn-success btn-custom">
+                    <i class="bi bi-plus-circle me-2"></i>Thêm chi nhánh
+                </a>
+            </div>
         </div>
 
         <!-- Table -->

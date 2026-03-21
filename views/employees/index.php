@@ -163,9 +163,14 @@
                 </p>
             </div>
 
-            <a href="<?= url('employee-create') ?>" class="btn btn-success btn-custom">
-                <i class="bi bi-person-plus-fill me-2"></i>Thêm nhân viên
-            </a>
+            <div class="d-flex gap-2">
+                <a href="<?= url('') ?>" class="btn btn-secondary btn-custom">
+                    <i class="bi bi-house-door me-2"></i>Quay lại Dashboard
+                </a>
+                <a href="<?= url('employee-create') ?>" class="btn btn-success btn-custom">
+                    <i class="bi bi-person-plus-fill me-2"></i>Thêm nhân viên
+                </a>
+            </div>
         </div>
 
         <div class="table-wrap">
