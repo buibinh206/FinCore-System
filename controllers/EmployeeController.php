@@ -41,7 +41,7 @@ class EmployeeController
 
             $this->employeeModel->insert($data);
 
-            header('Location: index.php?action=employees');
+            header('Location: ' . BASE_URL . 'employees');
             exit;
         }
     }
@@ -88,7 +88,7 @@ class EmployeeController
 
             $this->employeeModel->updateEmployee($id, $data);
 
-            header('Location: index.php?action=employees');
+            header('Location: ' . BASE_URL . 'employees');
             exit;
         }
     }
@@ -101,7 +101,7 @@ class EmployeeController
             $this->employeeModel->deleteEmployee($id);
         }
 
-        header('Location: index.php?action=employees');
+        header('Location: ' . BASE_URL . 'employees');
         exit;
     }
 }

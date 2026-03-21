@@ -7,7 +7,7 @@
 <body>
     <h1>Sửa nhân viên</h1>
 
-    <form action="index.php?action=employee-update" method="POST">
+    <form action="<?= url('employee-update') ?>" method="POST">
         <input type="hidden" name="id" value="<?= $employee['id'] ?>">
 
         <div>
@@ -78,7 +78,7 @@
         <br>
 
         <button type="submit">Cập nhật</button>
-        <a href="index.php?action=employees">Quay lại</a>
+        <a href="<?= url('employees') ?>">Quay lại</a>
     </form>
 </body>
 </html>
