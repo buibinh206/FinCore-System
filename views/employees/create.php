@@ -7,7 +7,7 @@
 <body>
     <h1>Thêm nhân viên</h1>
 
-    <form action="index.php?action=employee-store" method="POST">
+    <form action="<?= url('employee-store') ?>" method="POST">
         <div>
             <label>User staff</label><br>
             <select name="user_id" required>
@@ -74,7 +74,7 @@
         <br>
 
         <button type="submit">Lưu</button>
-        <a href="index.php?action=employees">Quay lại</a>
+        <a href="<?= url('employees') ?>">Quay lại</a>
     </form>
 </body>
 </html>

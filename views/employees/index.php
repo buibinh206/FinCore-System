@@ -7,7 +7,7 @@
 <body>
     <h1>Danh sách nhân viên</h1>
 
-    <a href="index.php?action=employee-create">+ Thêm nhân viên</a>
+    <a href="<?= url('employee-create') ?>">+ Thêm nhân viên</a>
 
     <table border="1" cellpadding="10" cellspacing="0" width="100%">
         <thead>
@@ -38,9 +38,9 @@
                         <td><?= htmlspecialchars($employee['branch_name'] ?? 'Chưa có') ?></td>
                         <td><?= htmlspecialchars($employee['status']) ?></td>
                         <td>
-                            <a href="index.php?action=employee-edit&id=<?= $employee['id'] ?>">Sửa</a>
+                            <a href="<?= url('employee-edit', [$employee['id']]) ?>">Sửa</a>
                             |
-                            <a href="index.php?action=employee-delete&id=<?= $employee['id'] ?>"
+                            <a href="<?= url('employee-delete', [$employee['id']]) ?>"
                                onclick="return confirm('Bạn có chắc muốn xóa không?')">
                                 Xóa
                             </a>
