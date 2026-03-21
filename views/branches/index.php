@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Danh sách chi nhánh</h1>
-    <a href="index.php?action=branch-create">+ Thêm chi nhánh</a>
+    <a href="<?= url('branch-create') ?>">+ Thêm chi nhánh</a>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
@@ -29,8 +29,8 @@
                         <td><?= htmlspecialchars($branch['address']) ?></td>
                         <td><?= htmlspecialchars($branch['phone']) ?></td>
                         <td>
-                            <a href="index.php?action=branch-edit&id=<?= $branch['id'] ?>">Sửa</a>
-                            <a href="index.php?action=branch-delete&id=<?= $branch['id'] ?>" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</a>
+                            <a href="<?= url('branch-edit', [$branch['id']]) ?>">Sửa</a>
+                            <a href="<?= url('branch-delete', [$branch['id']]) ?>" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</a>
                         </td>
                 </tr>
                 <?php endforeach; ?>

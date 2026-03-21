@@ -21,3 +21,18 @@ if (!function_exists('upload_file')) {
         throw new Exception('Upload file không thành công!');
     }
 }
+
+if (!function_exists('url')) {
+    function url($action, $params = [])
+    {
+        $url = BASE_URL . $action;
+        
+        if (!empty($params)) {
+            foreach ($params as $key => $value) {
+                $url .= '/' . $value;
+            }
+        }
+        
+        return $url;
+    }
+}
